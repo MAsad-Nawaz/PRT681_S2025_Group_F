@@ -1,0 +1,138 @@
+﻿@{
+    ViewBag.Title = "PostToken";
+}
+
+<div class="container body-content">
+
+
+    <link type="text/css" href="~/Areas/HelpPage/HelpPage.css" rel="stylesheet">
+    <div id="body" class="help-page">
+        <section class="featured">
+            <div class="content-wrapper">
+                <p>
+                    <a href="/Help">Help Page Home</a>
+                </p>
+            </div>
+        </section>
+        <section class="content-wrapper main-content clear-fix">
+
+            <h1>POST /token</h1>
+            <div>
+                <p>This method is used to get the Access Token.</p>
+
+                <h2>Request Information</h2>
+
+                <h3>URI Parameters</h3>
+                <p>None.</p>
+
+                <h3>Body Parameters</h3>
+
+                <p></p>
+
+                <table class="help-page-table">
+                    <thead>
+                        <tr><th>Name</th><th>Description</th><th>Type</th><th>Additional information</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="parameter-name">UserName</td>
+                            <td class="parameter-documentation">
+                                <p>User Name</p>
+                            </td>
+                            <td class="parameter-type">
+                                string
+                            </td>
+                            <td class="parameter-annotations">
+                                <p>None.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="parameter-name">password</td>
+                            <td class="parameter-documentation">
+                                <p>Password</p>
+                            </td>
+                            <td class="parameter-type">
+                                string
+                            </td>
+                            <td class="parameter-annotations">
+                                <p>None.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="parameter-name">grant_type</td>
+                            <td class="parameter-documentation">
+                                <p> Grant Type</p>
+                            </td>
+                            <td class="parameter-type">
+                                string
+                            </td>
+                            <td class="parameter-annotations">
+                                <p>None.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+
+
+                <h3>Resource Description</h3>
+
+                <h3>Request Formats</h3>
+
+                <div>
+                    <h4 class="sample-header">application/x-www-form-urlencoded</h4>
+                    <div class="sample-content">
+                        <span><b>Example:</b></span>
+                        <pre class="wrapped">"username"="Alice"
+"password"="password123"
+"grant_type"="password"
+</pre>
+                    </div>
+                </div>
+            </div>
+
+            @*<h3>Request Formats</h3>*@
+
+            <div>
+                @*<h4 class="sample-header">application/json, text/json</h4>
+                                        <div class="sample-content">
+                                            <span><b>Sample:</b></span>
+                    <pre class="wrapped">"sample string 1"
+                    </pre>
+                                        </div>*@
+                @*<h4 class="sample-header">application/xml, text/xml</h4>
+                                        <div class="sample-content">
+                                            <span><b>Sample:</b></span>
+                    <pre class="wrapped">&lt;string xmlns="http://schemas.microsoft.com/2003/10/Serialization/"&gt;sample string 1&lt;/string&gt;
+                    </pre>
+                                        </div>*@
+            </div>
+            <h2>Response Information</h2>
+            <h3>Response Formats</h3>
+
+            <div>
+                <h4 class="sample-header">application/json, text/json</h4>
+                <div class="sample-content">
+                    <span><b>Sample:</b></span>
+<pre class="wrapped">"{
+    "access_token": "hdlZycPicd4m0ZnYjP4ssOCgnrSnjuI1XQC1ocvpEBvsMnjR4nGCIUrDSGk6gCpj0dF__60zyBANeleNtSnfo6X2ba80o4avQazR27KMs8tBfrU96C6fFkW4M64eUDErPdzuoaiO2RpQLSz6gGShdsCyioc-eHLcXCgSet8IYLnLhDAFyqehgtLwWUCyMlYE6MI6NwjmAGRzPj5F0axKvwuJW9RcJjbzRAm68XScPuwqoDzYr_OTOuGOXZbVL-RvWizxsEYFQeTgsfLMhw3qNFvpYv7yZwfuvP6lQnxrQvdnbRhnVWfW3jj_Aw1th4Y9",
+    "token_type": "bearer",
+    "expires_in": 7199
+}"
+</pre>
+                </div>
+                @*<h4 class="sample-header">application/xml, text/xml</h4>
+                                        <div class="sample-content">
+                                            <span><b>Sample:</b></span>
+                    <pre class="wrapped">&lt;string xmlns="http://schemas.microsoft.com/2003/10/Serialization/"&gt;sample string 1&lt;/string&gt;
+                    </pre>
+                                        </div>*@
+            </div>
+    </div>
+    </section>
+</div>
+
+<hr>
+<footer></footer>
+</div>
