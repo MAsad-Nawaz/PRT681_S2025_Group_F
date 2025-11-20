@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="get_ShippingCharges">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="shipVia" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="serviceStandard" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Address1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="State" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Zip" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Country" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="p_Declarevalue" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="p_TempRecords" />
+            <s:element minOccurs="1" maxOccurs="1" name="p_TotalQty" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="p_SignatureRequiredforDelivery" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="p_ViewDetail" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="p_DropShipAddress" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="get_ShippingChargesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="get_ShippingChargesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="get_ShippingChargesMVC">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="shipVia" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="serviceStandard" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Address1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="State" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Zip" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Country" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="p_Declarevalue" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="p_TempRecords" type="tns:ArrayOfDecimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="p_TotalQty" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="p_SignatureRequiredforDelivery" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="p_ViewDetail" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="p_DropShipAddress" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfDecimal">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="decimal" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="get_ShippingChargesMVCResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="get_ShippingChargesMVCResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="get_ShippingChargesWEB">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MYArrserviceCode" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="Address1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="State" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Zip" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Country" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="p_Declarevalue" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="p_TempRecords" type="tns:ArrayOfString" />
+            <s:element minOccurs="1" maxOccurs="1" name="p_TotalQty" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="p_SignatureRequiredforDelivery" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="p_ViewDetail" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="p_DropShipAddress" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="get_ShippingChargesWEBResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="get_ShippingChargesWEBResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Verify_Address">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Address1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="State" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Zip" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Country" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="p_DropShipAddress" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Verify_AddressResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Verify_AddressResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="get_ShippingChargesSoapIn">
+    <wsdl:part name="parameters" element="tns:get_ShippingCharges" />
+  </wsdl:message>
+  <wsdl:message name="get_ShippingChargesSoapOut">
+    <wsdl:part name="parameters" element="tns:get_ShippingChargesResponse" />
+  </wsdl:message>
+  <wsdl:message name="get_ShippingChargesMVCSoapIn">
+    <wsdl:part name="parameters" element="tns:get_ShippingChargesMVC" />
+  </wsdl:message>
+  <wsdl:message name="get_ShippingChargesMVCSoapOut">
+    <wsdl:part name="parameters" element="tns:get_ShippingChargesMVCResponse" />
+  </wsdl:message>
+  <wsdl:message name="get_ShippingChargesWEBSoapIn">
+    <wsdl:part name="parameters" element="tns:get_ShippingChargesWEB" />
+  </wsdl:message>
+  <wsdl:message name="get_ShippingChargesWEBSoapOut">
+    <wsdl:part name="parameters" element="tns:get_ShippingChargesWEBResponse" />
+  </wsdl:message>
+  <wsdl:message name="Verify_AddressSoapIn">
+    <wsdl:part name="parameters" element="tns:Verify_Address" />
+  </wsdl:message>
+  <wsdl:message name="Verify_AddressSoapOut">
+    <wsdl:part name="parameters" element="tns:Verify_AddressResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Service1Soap">
+    <wsdl:operation name="get_ShippingCharges">
+      <wsdl:input message="tns:get_ShippingChargesSoapIn" />
+      <wsdl:output message="tns:get_ShippingChargesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="get_ShippingChargesMVC">
+      <wsdl:input message="tns:get_ShippingChargesMVCSoapIn" />
+      <wsdl:output message="tns:get_ShippingChargesMVCSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="get_ShippingChargesWEB">
+      <wsdl:input message="tns:get_ShippingChargesWEBSoapIn" />
+      <wsdl:output message="tns:get_ShippingChargesWEBSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Verify_Address">
+      <wsdl:input message="tns:Verify_AddressSoapIn" />
+      <wsdl:output message="tns:Verify_AddressSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Service1Soap" type="tns:Service1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="get_ShippingCharges">
+      <soap:operation soapAction="http://tempuri.org/get_ShippingCharges" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_ShippingChargesMVC">
+      <soap:operation soapAction="http://tempuri.org/get_ShippingChargesMVC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_ShippingChargesWEB">
+      <soap:operation soapAction="http://tempuri.org/get_ShippingChargesWEB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Verify_Address">
+      <soap:operation soapAction="http://tempuri.org/Verify_Address" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Service1Soap12" type="tns:Service1Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="get_ShippingCharges">
+      <soap12:operation soapAction="http://tempuri.org/get_ShippingCharges" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_ShippingChargesMVC">
+      <soap12:operation soapAction="http://tempuri.org/get_ShippingChargesMVC" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="get_ShippingChargesWEB">
+      <soap12:operation soapAction="http://tempuri.org/get_ShippingChargesWEB" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Verify_Address">
+      <soap12:operation soapAction="http://tempuri.org/Verify_Address" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="Service1Soap" binding="tns:Service1Soap">
+      <soap:address location="http://b2b.loloirugs.com/wsShipping_Test/Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Service1Soap12" binding="tns:Service1Soap12">
+      <soap12:address location="http://b2b.loloirugs.com/wsShipping_Test/Service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

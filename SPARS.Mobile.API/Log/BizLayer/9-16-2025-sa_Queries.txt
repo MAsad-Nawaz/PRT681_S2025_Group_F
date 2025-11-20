@@ -1,0 +1,3 @@
+\*16/09/2025 6:25:43 PM TimeSpan: 217 ms *\: EXEC  SSS_MA_RequestLog 'UserName: Test.Student1 Password: 12345',0,'127.0.0.1','GrantResourceOwnerCredentials'
+\*16/09/2025 6:25:43 PM TimeSpan: 62 ms *\: EXEC SSS_MA_LoginVerify 'Test.Student1', 'GDEBC', '"fs9eNEZTSliYWDgVQ-DOVJ:APA91bGoYVJ8QlOOC8BZ6JTqxTVBP5NGJ2v-5oGTd7LEzqykbIck8X7hDhf76AqFqulWWlbUNqxUDc0rVSkaLUiADcETwXXHf7SaetHnckp_YAYLl951XpkSua6MDj-fLzoNMZ830HBi"'
+\*16/09/2025 6:25:43 PM TimeSpan: 4 ms *\: EXEC  SSS_MA_ResponseLog '{"request_header":{"version":"1.0.0.1","request_id":"95219"},"request_results":{"result_header":{"status":null,"code":null,"description":null},"result_details":null}}',95219,1,'192.168.56.1','GrantResourceOwnerCredentials'

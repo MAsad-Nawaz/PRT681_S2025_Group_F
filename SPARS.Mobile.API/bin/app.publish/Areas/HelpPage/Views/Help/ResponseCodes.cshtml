@@ -1,0 +1,144 @@
+﻿@{
+    ViewBag.Title = "ResponseCodes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Areas/HelpPage/HelpPage.css" rel="stylesheet" />
+
+<div id="body" class="help-page">
+    <h1>API Response Codes</h1>
+    <div>
+        @using (Html.BeginForm("Help", "ResponseCodes",FormMethod.Get))
+        {
+            @Html.TextBox("p_ResponseCode", "", new { @id = "p_responseCode", @name = "responseCode", @maxlength="5" })
+            <button onclick="@Url.Action("Help", "ResponseCodes")">Search</button>
+        }
+    </div>
+    <section class="content-wrapper main-content clear-fix">
+@{
+    var emptyCount = 0;
+    if (ViewBag.SuccessCodesList.Count != 0)
+    {
+        <h2 id="Values">Success Codes </h2>
+        <table class="help-page-table">
+            <thead>
+                <tr>
+                    <th>Response Code</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    foreach (var Code in ViewBag.SuccessCodesList)
+                    {
+                        <tr>
+                            <td class="api-name">@Code.Code</td>
+                            <td class="api-documentation">
+                                <p>@Code.Description</p>
+                            </td>
+                        </tr>
+                    }  
+                    }              
+            </tbody>
+        </table>
+    }
+    else
+    {
+        emptyCount++;
+    }
+    if (ViewBag.ErrorCodesList.Count != 0)
+    {
+        <h2 id="Values">Error Codes </h2>
+        <table class="help-page-table">
+            <thead>
+                <tr>
+                    <th>Response Code</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    foreach (var Code in ViewBag.ErrorCodesList)
+                    {
+                        <tr>
+                            <td class="api-name">@Code.Code</td>
+                            <td class="api-documentation">
+                                <p>@Code.Description</p>
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        emptyCount++;
+    }
+    if (ViewBag.WarningCodesList.Count != 0)
+    {
+        <h2 id="Values">Warning Codes </h2>
+        <table class="help-page-table">
+            <thead>
+                <tr>
+                    <th>Response Code</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    foreach (var Code in ViewBag.WarningCodesList)
+                    {
+                        <tr>
+                            <td class="api-name">@Code.Code</td>
+                            <td class="api-documentation">
+                                <p>@Code.Description</p>
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        emptyCount++;
+    }
+    if (ViewBag.ExceptionCodesList.Count != 0)
+    {
+        <h2 id="Values">Exception Codes </h2>
+        <table class="help-page-table">
+            <thead>
+                <tr>
+                    <th>Response Code</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    foreach (var Code in ViewBag.ExceptionCodesList)
+                    {
+                        <tr>
+                            <td class="api-name">@Code.Code</td>
+                            <td class="api-documentation">
+                                <p>@Code.Description</p>
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        emptyCount++;
+    }
+    if (emptyCount == 4)
+    {
+        <div>
+            <h2 class="text-center">No Record Found</h2>
+        </div>
+    }
+}
+    </section>
+
+</div>

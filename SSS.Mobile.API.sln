@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSS.BizLayer", "SPARS.BizLayer\SSS.BizLayer.csproj", "{28DAD4B4-6BDC-42AE-9DAA-13F7A787F5E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSS.Mobile.API", "SPARS.Mobile.API\SSS.Mobile.API.csproj", "{5F1DB7DA-E751-4233-AFB6-07F0EDCE6B86}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28DAD4B4-6BDC-42AE-9DAA-13F7A787F5E2}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{28DAD4B4-6BDC-42AE-9DAA-13F7A787F5E2}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{28DAD4B4-6BDC-42AE-9DAA-13F7A787F5E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28DAD4B4-6BDC-42AE-9DAA-13F7A787F5E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F1DB7DA-E751-4233-AFB6-07F0EDCE6B86}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{5F1DB7DA-E751-4233-AFB6-07F0EDCE6B86}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{5F1DB7DA-E751-4233-AFB6-07F0EDCE6B86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F1DB7DA-E751-4233-AFB6-07F0EDCE6B86}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {23737A5C-D9C5-418F-AF22-6B910A13B487}
+	EndGlobalSection
+EndGlobal

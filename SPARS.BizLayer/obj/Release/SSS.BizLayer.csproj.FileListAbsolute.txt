@@ -1,0 +1,11 @@
+D:\School_App\Mobile_App_API\SSS.Mobile.API-master\SSS.Mobile.API-master\SPARS.BizLayer\bin\Release\SSS.BizLayer.dll
+D:\School_App\Mobile_App_API\SSS.Mobile.API-master\SSS.Mobile.API-master\SPARS.BizLayer\bin\Release\SSS.BizLayer.pdb
+D:\School_App\Mobile_App_API\SSS.Mobile.API-master\SSS.Mobile.API-master\SPARS.BizLayer\bin\Release\adodb.dll
+D:\School_App\Mobile_App_API\SSS.Mobile.API-master\SSS.Mobile.API-master\SPARS.BizLayer\obj\Release\SSS.BizLayer.csproj.AssemblyReference.cache
+D:\School_App\Mobile_App_API\SSS.Mobile.API-master\SSS.Mobile.API-master\SPARS.BizLayer\obj\Release\Interop.Scripting.dll
+D:\School_App\Mobile_App_API\SSS.Mobile.API-master\SSS.Mobile.API-master\SPARS.BizLayer\obj\Release\Interop.VBA.dll
+D:\School_App\Mobile_App_API\SSS.Mobile.API-master\SSS.Mobile.API-master\SPARS.BizLayer\obj\Release\SSS.BizLayer.csproj.ResolveComReference.cache
+D:\School_App\Mobile_App_API\SSS.Mobile.API-master\SSS.Mobile.API-master\SPARS.BizLayer\obj\Release\SSS.BizLayer.csproj.CoreCompileInputs.cache
+D:\School_App\Mobile_App_API\SSS.Mobile.API-master\SSS.Mobile.API-master\SPARS.BizLayer\obj\Release\SSS.BizL.A9A84181.Up2Date
+D:\School_App\Mobile_App_API\SSS.Mobile.API-master\SSS.Mobile.API-master\SPARS.BizLayer\obj\Release\SSS.BizLayer.dll
+D:\School_App\Mobile_App_API\SSS.Mobile.API-master\SSS.Mobile.API-master\SPARS.BizLayer\obj\Release\SSS.BizLayer.pdb
